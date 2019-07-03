@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('./iconfont.eot') format('eot');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hello {
+  color: brown;
+  font-family: 'iconfont';
+  background: url('./icon.png')
+}

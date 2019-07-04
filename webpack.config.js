@@ -5,7 +5,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
+    another: './src/another-module.js'
   },
   devtool: 'inline-source-map',//方便报错后找到源文件
   devServer: {
@@ -20,6 +21,7 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
+  
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname,'dist'),

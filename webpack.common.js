@@ -8,7 +8,7 @@ module.exports = {
     app: './src/index'
   },
   plugins:[
-    new CleanWebackPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title:'Production'
     }),
@@ -16,7 +16,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    filename:[name].bundle.js,
+    filename:'[name].bundle.js',
     path:path.resolve(__dirname,'dist'),
     publicPath: '/'
   },
